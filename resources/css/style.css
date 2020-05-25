@@ -18,6 +18,18 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
 /*--------------------*/
 /*RESUSABLE COMPONENTS*/
 /*--------------------*/
@@ -153,11 +165,21 @@ https://www.0to255.com/
 }
 
 /*--------------------*/
-/*SECTION - FEATURES*/
+/*GENERIC LINKS*/
 /*--------------------*/
+a:link,
+a:visited {
+	color: #e67e22;
+	text-decoration: none;
+	border-bottom: 1px solid #e67e22;
+	padding-bottom: 1px;
+	transition: color 0.2s, border-bottom 0.2s;
+}
 
-.section-features-top {
-	margin-bottom: 35px;
+a:hover,
+a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
 }
 
 /*--------------------*/
@@ -251,4 +273,99 @@ header {
 .meal-photo img:hover {
 	opacity: 100%;
 	transform: scale(1.03);
+}
+
+/*--------------------*/
+/*SECTION - FEATURES*/
+/*--------------------*/
+
+.section-features-top {
+	margin-bottom: 35px;
+}
+
+/*----------------------*/
+/*SECTION - HOW IT WORKS*/
+/*----------------------*/
+
+.section-steps {
+	background-color: #f4f4f4;
+}
+
+.steps-box {
+	margin-top: 30px;
+}
+
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+.app-screen {
+	width: 40%;
+}
+
+.how-it-works-step {
+	margin-bottom: 50px;
+}
+
+.how-it-works-step:last-of-type {
+	margin-bottom: 95px;
+}
+
+.how-it-works-step div {
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	font-size: 150%;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+	border: 0;
+}
+
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
+
+/*----------------------*/
+/*SECTION - CITIES*/
+/*----------------------*/
+
+.box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.city-feature {
+	margin-bottom: 5px;
+}
+
+.ion-icon-city {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #e67e22;
+	font-size: 120%;
+	margin-right: 10px;
+	/*secrets to align text and icons*/
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -4px;
 }
