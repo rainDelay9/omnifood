@@ -9,6 +9,10 @@
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+}
+
 html {
 	background-color: #fff;
 	color: rgb(124, 124, 124);
@@ -521,6 +525,95 @@ input[type='checkbox'] {
 	margin: 10px 5px 10px 0;
 }
 
-*:focus {
-	outline: none;
+/*----------------------*/
+/*FOOTER*/
+/*----------------------*/
+
+footer {
+	background-color: #333;
+	padding: 45px;
+	font-size: 90%;
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li,
+.social-links li {
+	display: inline-block;
+}
+
+.footer-nav li {
+	margin-right: 20px;
+}
+
+.social-links li {
+	margin-right: 10px;
+}
+
+.social-links li:last-of-type,
+.footer-nav li:last-of-type {
+	margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+	border: 0;
+	text-decoration: none;
+	color: #888;
+	transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	color: #ddd;
+}
+
+.logo-facebook,
+.logo-twitter,
+.logo-instagram,
+.logo-youtube,
+.logo-linkedin {
+	transition: color 0.2s;
+}
+
+.logo-facebook:hover,
+.logo-facebook:active {
+	color: #1877f2;
+}
+
+.logo-twitter:hover,
+.logo-twitter:active {
+	color: #1da1f2;
+}
+
+.logo-instagram:hover,
+.logo-instagram:active {
+	color: #c32aa3;
+}
+
+.logo-youtube:hover,
+.logo-youtube:active {
+	color: #ff0000;
+}
+
+.logo-linkedin:hover,
+.logo-linkedin:active {
+	color: #007bb5;
+}
+
+footer p {
+	color: #888;
+	float: right;
+	font-size: 90%;
+	margin-top: 30px;
 }

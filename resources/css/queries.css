@@ -1,0 +1,15 @@
+/* Big tablet to 1200 pixels - smaller than pixel row */
+@media only screen and (max-width: 1200px) {
+}
+
+/* IPAD portrait mode - 768 to 1023 pixels - small tablet to big tablet */
+@media only screen and (max-width: 1023px) {
+}
+
+/* IPAD WIDTH - 481 to 767 pixels - small phones to small tablets */
+@media only screen and (max-width: 767px) {
+}
+
+/* IPHONE WIDTH (AND SMALL PHONES) - 0 to 480 pixels */
+@media only screen and (max-width: 480px) {
+}
