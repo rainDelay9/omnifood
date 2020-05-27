@@ -1,15 +1,159 @@
 /* Big tablet to 1200 pixels - smaller than pixel row */
 @media only screen and (max-width: 1200px) {
+	.hero-text-box {
+		width: 100%;
+		padding: 0 2%;
+	}
+
+	.row {
+		padding: 0 2%;
+	}
 }
 
 /* IPAD portrait mode - 768 to 1023 pixels - small tablet to big tablet */
 @media only screen and (max-width: 1023px) {
+	body {
+		font-size: 18px;
+	}
+
+	.long-copy {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.steps-box,
+	.steps-box:last-child {
+		margin-top: 10px;
+	}
+
+	.how-it-works-step {
+		margin-bottom: 40px;
+	}
+
+	.how-it-works-step:last-of-type {
+		margin-bottom: 60px;
+	}
+
+	.app-screen {
+		width: 40%;
+	}
+
+	.ion-icon-city {
+		width: 17px;
+		margin-right: 5px;
+	}
+
+	.city-feature {
+		font-size: 90%;
+	}
+
+	.plan-box {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.plan-price {
+		font-size: 250%;
+	}
+
+	.contact-form {
+		width: 80%;
+	}
 }
 
 /* IPAD WIDTH - 481 to 767 pixels - small phones to small tablets */
 @media only screen and (max-width: 767px) {
+	body {
+		font-size: 16px;
+	}
+
+	.row,
+	.hero-text-box {
+		padding: 0 4%;
+	}
+
+	.col {
+		width: 100%;
+		margin: 0 0 4% 0;
+	}
+
+	.main-nav {
+		display: none;
+		float: left;
+		margin-top: 15px;
+		margin-left: 25px;
+		font-size: 100%;
+	}
+
+	.main-nav li {
+		display: block;
+	}
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0;
+		padding-bottom: 10px;
+		font-size: 100%;
+	}
+
+	.mobile-nav-icon {
+		display: block;
+		margin-top: 15px;
+	}
+
+	.long-copy {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.steps-box,
+	.steps-box:last-child {
+		margin-top: 5px;
+	}
+
+	.steps-box:first-child {
+		text-align: center;
+	}
+
+	.how-it-works-step {
+		margin-bottom: 20px;
+	}
+
+	.how-it-works-step:last-of-type {
+		margin-bottom: 20px;
+	}
+
+	.how-it-works-step div {
+		height: 30px;
+		width: 30px;
+		font-size: 120%;
+		padding: 2px;
+	}
+
+	/* STICKY */
+
+	.sticky .main-nav {
+		margin-top: 10px;
+	}
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		padding: 10px 0px;
+	}
+
+	.sticky .mobile-nav-icon {
+		color: #555;
+	}
 }
 
 /* IPHONE WIDTH (AND SMALL PHONES) - 0 to 480 pixels */
 @media only screen and (max-width: 480px) {
+	section {
+		padding: 25px 0;
+	}
+
+	.contact-form {
+		width: 100%;
+	}
 }
